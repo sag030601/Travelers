@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    height: 75vh;
+    width: 25%;
+    border-radius: 10px;
+    background: black;
+    padding: 10px;
+   
+}
+
+form input{
+    display: block;
+    width: 100%;
+}
+
+form button{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
