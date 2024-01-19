@@ -1,0 +1,937 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h5 {
+  font-family: 'Freehand', cursive;
+  color: #ff6057;
+  font-size: 2vw;
+  margin-bottom: 0.5vw;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+
+/* hero */
+
+.hero {
+  height: 78vh;
+  position: relative;
+}
+
+
+.hidden {
+  opacity: 0;
+}
+
+
+.hero #carouselBasicExample {
+  height: 100%;
+}
+
+.hero #carouselBasicExample .carousel-inner {
+  height: 100%;
+}
+
+.hero #carouselBasicExample .carousel-inner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero #carouselBasicExample .carousel-inner .carousel-item {
+  height: 100%;
+}
+
+.hero button span {
+  background: #000000ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+}
+
+
+.carousel-control-prev-icon:after {
+  font-size: 1rem;
+}
+
+.carousel-control-next-icon:after {
+  font-size: 1rem;
+}
+
+.carousel-indicators [data-mdb-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.hero button {
+  opacity: 0;
+}
+
+.hero button span {
+  background: rgba(0, 0, 0, 0.57);
+  height: 3vw;
+  width: 3vw;
+}
+
+.hero button span:hover {
+  background: #3f9090;
+}
+
+
+
+.hero .carousel-caption {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero h5 {
+  color: white;
+  font-size: 3vw;
+}
+
+.hero h1 {
+  font-weight: bolder;
+  font-size: 5vw;
+}
+
+.hero h6 {
+  font-size: 1.2vw;
+}
+
+/* wishList css  */
+
+#wishList {
+  position: absolute;
+  top: 6vw;
+  right: -2vw;
+  height: 20vw;
+  width: 30vw;
+  background: white;
+  z-index: 999;
+  transition: display 0.3s ease-in-out;
+  display: none;
+}
+
+#wishList:hover {
+  display: block;
+}
+
+
+#wishList ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  padding: 1% 5%;
+}
+
+#wishList ul::-webkit-scrollbar {
+  width: 0;
+}
+
+.cartItem {
+  display: flex;
+  gap: 5%;
+  margin-bottom: 0.5vw;
+  justify-content: space-between;
+}
+
+.cartItem .imgWrapper {
+  height: 5vw;
+  width: 5vw;
+}
+
+.cartItem h1:nth-child(1) {
+  width: 20%;
+}
+
+.cartItem h1:nth-child(2) {
+  width: 50%;
+}
+
+.cartItem h1:nth-child(3) {
+  width: 20%;
+  text-align: left;
+}
+
+.itemSelected {
+  color: red !important;
+}
+
+.cartItem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cartItem h1 {
+  font-size: 1vw;
+}
+
+/* wishList css  */
+
+/* Shopping cart css  */
+
+#cartContainer {
+  position: absolute;
+  top: 7vw;
+  right: 0;
+  height: 20vw;
+  width: 30vw;
+  z-index: 999;
+  transition: opacity 0.3s ease-in-out;
+  display: none;
+  background: white;
+}
+
+#cartIcon:hover #cartContainer {
+  display: block;
+}
+
+#cartList{
+  padding: 1% 5%;
+  height: 100%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+#bookNow{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: blue;
+  color: white;
+  padding: 2% 1%;
+  box-shadow: none;
+  border: none;
+}
+
+#cartList li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 3%;
+  margin-bottom: 0.5vw;
+}
+
+#cartList li h1 {
+  font-size: 1vw;
+}
+
+#cartList li .imgWrapper{
+  height: 5vw;
+  width: 5vw;
+}
+
+#cartList li .imgWrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#cartList::-webkit-scrollbar {
+  width: 0;
+}
+
+#cartList h1:nth-child(1) {
+  width: 20%;
+}
+
+#cartList h1:nth-child(2) {
+  width: 50%;
+}
+
+#cartList h1:nth-child(3) {
+  width: 20%;
+  text-align: left;
+}
+
+
+
+/* Shopping cart css  */
+
+
+/* hero */
+
+
+/* features */
+.features {
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  gap: 5%;
+}
+
+.features h1 {
+  font-size: 3vw;
+}
+
+.features #carouselExampleIndicators {
+  height: 33%;
+  width: 85%;
+}
+
+.features #carouselExampleIndicators .carousel-inner {
+  height: 100%;
+}
+
+.features #carouselExampleIndicators .carousel-inner .carousel-item {
+  height: 100%;
+}
+
+.features #carouselExampleIndicators .carousel-inner .carousel-item .row {
+  height: 100%;
+}
+
+.features #carouselExampleIndicators .carousel-inner .carousel-item .row .col-lg-4 {
+  height: 100%;
+}
+
+.features .carousel-inner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+.features .carousel-control-prev {
+  left: -6%;
+}
+
+.features .carousel-control-next {
+  right: -6%;
+}
+
+.features button span {
+  border: 1px solid #d7d4d4;
+  color: black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5vw;
+  width: 2.5vw;
+}
+
+.carousel-control-next-icon::after {
+  font-size: 1vw;
+  font-weight: bolder;
+}
+
+.carousel-control-prev-icon::after {
+  font-size: 1vw;
+  font-weight: bolder;
+}
+
+
+
+.features button {
+  width: fit-content;
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+}
+
+.features .carousel-inner {
+  margin-bottom: 35px;
+}
+
+.features .carousel-indicators {
+  bottom: -55px;
+}
+
+.features .carousel-item .row .col-lg-4 {
+  position: relative;
+}
+
+.features .carousel-item .row .col-lg-4 .coltxt {
+  position: absolute;
+  left: 3%;
+  top: 0%;
+  height: 100%;
+  width: 40%;
+  background: #00000075;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1%;
+}
+
+.coltxt h1 {
+  color: white;
+  font-size: 2.1vw;
+  font-weight: bolder;
+}
+
+.coltxt h5 {
+  color: white;
+  font-size: 2vw;
+}
+
+.coltxt h6 {
+  color: white;
+  font-size: 1vw;
+}
+
+.coltxt h4 {
+  color: white;
+  font-size: 1.5vw;
+}
+
+.coltxt a {
+  color: white;
+  font-size: 1vw;
+}
+
+
+
+
+
+/* features */
+
+
+/* packages */
+
+.packages {
+  padding: 100px 0;
+  height: 55vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #0000ff0f;
+  color: white;
+  gap: 3%;
+}
+
+.packages h1 {
+  font-size: 3vw;
+  margin-bottom: 0.5vw;
+  color: black;
+}
+
+.packages h5 {
+  margin-bottom: 0.5vw;
+  color: #ff5774;
+}
+
+.packages #carouselExampleIndicators2 {
+  height: 80%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.packages #carouselExampleIndicators2 .carousel-inner {
+  height: 100%;
+  width: 100%;
+}
+
+.packages #carouselExampleIndicators2 .carousel-inner .carousel-item {
+  height: 100%;
+  width: 100%;
+
+}
+
+.packages #carouselExampleIndicators2 .carousel-inner .carousel-item .row {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.packages #carouselExampleIndicators2 .carousel-inner .carousel-item .row .col-lg-4 {
+  height: 100%;
+
+}
+
+.packages #carouselExampleIndicators2 .carousel-inner .carousel-item .row .col-lg-4 .card {
+  height: 90%;
+  width: 100%;
+  margin: 10px;
+  position: relative;
+}
+
+.packages #carouselExampleIndicators2 .carousel-inner .carousel-item .row .col-lg-4 .card img {
+  height: 60%;
+  object-fit: cover;
+}
+
+.packages .carousel-control-prev {
+  left: 0%;
+}
+
+.packages .carousel-control-prev span,
+.packages .carousel-control-next span {
+  border: 1px solid black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.packages .carousel-control-next {
+  right: 0;
+}
+
+.packages button {
+  width: fit-content;
+}
+
+.packages .card-body {
+  display: flex;
+  gap: 5%;
+  flex-direction: column;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 5%;
+  position: absolute;
+  bottom: 0;
+  background: white;
+}
+
+.card-body p {
+  color: black;
+  text-align: center;
+  font-size: 1vw;
+  margin-bottom: 1%;
+}
+
+.packages .col-lg-4 {
+  width: 30%;
+}
+
+.packtxt {
+  color: black !important;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1vw;
+}
+
+.packtxt span {
+  font-weight: bolder;
+  font-size: 1.5vw;
+}
+
+.packages a {
+  color: black;
+  font-size: 1vw;
+  font-weight: bolder;
+}
+
+a.tourno {
+  position: absolute;
+  top: 57%;
+  background-color: black;
+  text-align: center;
+  left: 40%;
+  right: 50%;
+  color: white;
+  width: 15%;
+  height: 6%;
+  border-radius: 5px;
+  font-size: 0.8vw;
+  z-index: 999;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.packages .carousel-control-next-icon {
+  width: 3vw;
+  height: 3vw;
+}
+
+.packages .carousel-control-prev-icon {
+  width: 3vw;
+  height: 3vw;
+}
+
+/* packages */
+
+/* why */
+
+.whycontainer {
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  flex-direction: column;
+}
+
+.whycontainer h1 {
+  font-size: 3vw;
+  margin-bottom: 0.5vw;
+}
+
+.whycontent {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reason {
+  width: 24%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reason h1 {
+  font-size: 1.5vw;
+  color: black;
+  font-weight: 600;
+}
+
+.reasonImage {
+  height: 6vw;
+  background: black;
+  width: 6vw;
+  border-radius: 50%;
+  margin: 15px 0;
+}
+
+.reasontxt p {
+  font-size: 1vw;
+}
+
+#box1 {
+  background: pink;
+}
+
+#box1 i {
+  color: rgb(220, 98, 116);
+}
+
+#box2 {
+  background: lightblue;
+}
+
+#box2 i {
+  color: rgb(74, 74, 204);
+}
+
+#box3 {
+  background: rgb(228, 180, 228);
+}
+
+#box3 i {
+  color: rgb(194, 27, 194);
+}
+
+#box4 {
+  background: rgb(241, 241, 163);
+}
+
+#box4 i {
+  color: rgb(225, 225, 55);
+}
+
+.reasonImage i {
+  width: 100%;
+  height: 100%;
+  font-size: 1.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* why */
+
+/* Tours  */
+
+.tours {
+  height: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0000ff0f;
+  padding: 5% 0;
+
+}
+
+.tours h1 {
+  font-size: 3vw;
+}
+
+.toursContainer {
+  height: 100%;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tourTabs {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 15px auto;
+  gap: 1%;
+}
+
+.tourTabs a {
+  color: black;
+  background: white;
+  padding: 1.5% 0px;
+  text-align: center;
+  width: 15%;
+  font-size: 1vw;
+}
+
+.toursContainer .card {
+  height: 100%;
+  padding-bottom: 5%;
+  position: relative;
+}
+
+.tours .card .fa-heart {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  font-size: 1.5vw;
+  color: white;
+}
+
+
+
+.toursContainer .card img {
+  height: 50%;
+  object-fit: cover;
+}
+
+.tours #carouselExampleIndicators3 {
+  height: 75%;
+  width: 90%;
+}
+
+.tours #carouselExampleIndicators3 .carousel-inner {
+  height: 100%;
+}
+
+.tours #carouselExampleIndicators3 .carousel-inner .carousel-item {
+  height: 100%;
+}
+
+.tours #carouselExampleIndicators3 .carousel-inner .carousel-item .row {
+  height: 100%;
+}
+
+.tours #carouselExampleIndicators3 .carousel-inner .carousel-item .row .col-lg-4 {
+  height: 100%;
+}
+
+.tours .carousel-control-prev {
+  width: fit-content;
+  left: -7%;
+}
+
+.tours .carousel-control-next {
+  width: fit-content;
+  right: -7%;
+}
+
+.tours .carousel-control-prev span {
+  border: 1px solid black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  height: 3vw;
+  width: 3vw;
+}
+
+.tours .carousel-control-next span {
+  border: 1px solid black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  height: 3vw;
+  width: 3vw;
+}
+
+.tours .card-body {
+  height: 50%;
+  text-align: left;
+  align-items: flex-start;
+  gap: 3%;
+}
+
+.tours .card-body span {
+  color: #ff5774;
+  font-weight: bolder;
+  font-size: 1.5vw;
+}
+
+.tours .card-body h4 {
+  font-size: 1vw;
+}
+
+.tours .card-body h1 {
+  font-size: 1.5vw;
+  color: black;
+  font-weight: bolder;
+}
+
+.tours .card-body h4:nth-child(1) i {
+  margin-right: 5px;
+}
+
+.tours .card-body a {
+  width: 70%;
+  margin-bottom: 0.5vw;
+  font-size: 0.8vw;
+}
+
+@media only screen and (max-width:992px) {
+  .tours {
+      height: 100vw;
+  }
+}
+
+/* Tours  */
+
+
+
+/* activities */
+
+.activities {
+  height: 60vw;
+  margin: 10px 0;
+}
+
+.activities h1 {
+  font-size: 3vw;
+  margin-bottom: 0.8vw;
+}
+
+.activitiesContainer {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.activityHeader {
+  text-align: center;
+}
+
+.activitiesContent {
+  width: 100%;
+  height: 80%;
+}
+
+.activitiesContent .row {
+  height: 100%;
+}
+
+.activitiesContent .row .col-lg-4 {
+  height: 100%;
+  width: 33.3333%;
+}
+
+.colHeader {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.country {
+  display: flex;
+  height: 10vw;
+  margin: 10% 0;
+  border-bottom: 1px solid gray;
+  gap: 3%;
+}
+
+.country img {
+  height: 70%;
+  width: 20%;
+  object-fit: cover;
+}
+
+.colContent {
+  height: 90%;
+}
+
+.colHeader h5 {
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.colHeader i {
+  font-size: 1.5vw;
+}
+
+.countryInfo h5 {
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2vw;
+}
+
+.countryInfo h6 {
+  font-size: 1.2vw;
+}
+
+.countryInfo span {
+  color: #ff5774;
+  font-weight: bolder;
+}
+
+
+/* activities */
+
+/* footer  */
+
+footer h5 {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bolder;
+}
+
+/* footer  */
